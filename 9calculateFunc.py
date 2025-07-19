@@ -1,27 +1,28 @@
 #Build a function calculate(a, b, operator)
 
-def calculate(a, b, operator="") :
-    if operator== "+":
-        print(a+b)
-    elif operator== "-":
-        print(a-b)
-    elif operator== "*":
-        print(a*b)
-    elif operator== "/":
-        print(a/b)
-    elif operator== "%":
-        print(a%b)
-    elif operator== "^":
-        print(a**b)
+def calculate(a, b, operator="+"):
+    if operator == "+":
+        return a + b
+    elif operator == "-":
+        return a - b
+    elif operator == "*":
+        return a * b
+    elif operator == "/":
+        if b == 0:
+            return "Error: Division by zero"
+        return a / b
+    elif operator == "%":
+        if b == 0:
+            return "Error: Modulo by zero"
+        return a % b
+    elif operator == "^":
+        return a ** b
     else:
-        print(a+b)    
-    
+        return "Error: Invalid operator"
 
-calculate(2,3) #5
-calculate(2,3,"+") #5
-calculate(2,3,"*") #6
-calculate(2,3,"/") #0.6666666666666666
-calculate(2,3,"-") # -1
-calculate(2,3,"^") # 8
-calculate(2,3,"%") # 2
+print(calculate(10, 5, "+"))  # 15
+print(calculate(10, 0, "/"))  # Error: Division by zero
+print(calculate(2, 3, "^"))   # 8
+print(calculate(4, 2, "x"))   # Error: Invalid operator
+
 
