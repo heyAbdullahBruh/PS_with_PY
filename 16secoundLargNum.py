@@ -26,7 +26,7 @@ numList =[3,4,68,5,65,32,88]
 #             secLargNum=j
 #     return {"largeNum":largeNum,"secLargNum":secLargNum,}
 
-
+# way---->3
 def check2ndLargNum(listN) :
     secLargNum=0
     largeNum=0
@@ -36,6 +36,7 @@ def check2ndLargNum(listN) :
             largeNum=listN[i]
         elif listN[i] > secLargNum and largeNum !=listN[i] :
              secLargNum=listN[i]
+        i=i+1
     return {"largeNum":largeNum,"secLargNum":secLargNum,}
 print(check2ndLargNum(numList))
 
