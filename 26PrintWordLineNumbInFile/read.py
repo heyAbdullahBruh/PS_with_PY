@@ -1,4 +1,4 @@
-#Problem-25 ---> Search for a Word in a File and Print Line Numbers
+#Problem-26 ---> Search for a Word in a File and Print Line Numbers
 
 
 
@@ -13,5 +13,6 @@ def findWordLineNumformFile(filename,word):
     return lineNumb
    
 print(findWordLineNumformFile('file.txt',"blanditiis")) # 6
-
+print(findWordLineNumformFile('file.txt',"expedita")) # 2
+print(findWordLineNumformFile('file.txt',"nostrum")) # 5
 
