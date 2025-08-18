@@ -1,4 +1,7 @@
 # Problem -39 --- Time Class --> 
+# Attributes: hours, minutes
+# Method: add_time(t2) → returns total time
+
 
 from math import floor
 
